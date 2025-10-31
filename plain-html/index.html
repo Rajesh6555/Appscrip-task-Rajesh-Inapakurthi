@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop — Product Listing Page</title>
+  <meta name="description" content="Browse our curated catalog of products across categories. Fast shipping, great prices, and secure checkout." />
+  <meta property="og:title" content="Shop — Product Listing Page" />
+  <meta property="og:description" content="Browse our curated catalog of products across categories." />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Product Listing Page",
+    "description": "Browse our curated catalog of products across categories.",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"/"},
+        {"@type":"ListItem","position":2,"name":"Shop","item":"/"}
+      ]
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Shop Home">Appscrip Shop</a>
+      <nav aria-label="Primary" class="nav">
+        <a href="#" class="nav-link">New</a>
+        <a href="#" class="nav-link">Men</a>
+        <a href="#" class="nav-link">Women</a>
+        <a href="#" class="nav-link">Electronics</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <h1 class="page-title">Shop</h1>
+    <h2 class="visually-hidden">All Products</h2>
+
+    <section class="toolbar" aria-label="Filters and sorting">
+      <div class="filters-row">
+        <label for="category" class="label">Category</label>
+        <select id="category" name="category" class="select">
+          <option>All</option>
+          <option>Men's clothing</option>
+          <option>Women's clothing</option>
+          <option>Electronics</option>
+          <option>Jewelery</option>
+        </select>
+      </div>
+      <div class="filters-row">
+        <label for="sort" class="label">Sort</label>
+        <select id="sort" name="sort" class="select">
+          <option value="relevance">Relevance</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="title-asc">Title: A–Z</option>
+          <option value="title-desc">Title: Z–A</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="Product results">
+      <article class="card">
+        <a href="#" class="card-link">
+          <img src="https://via.placeholder.com/600x750" alt="Classic tee in black" class="card-img" />
+          <h3 class="card-title">Classic Tee</h3>
+          <p class="card-price">$24.00</p>
+        </a>
+      </article>
+      <article class="card">
+        <a href="#" class="card-link">
+          <img src="https://via.placeholder.com/600x750" alt="Blue denim jacket" class="card-img" />
+          <h3 class="card-title">Denim Jacket</h3>
+          <p class="card-price">$79.00</p>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p class="muted">© 2025 Appscrip Demo. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
