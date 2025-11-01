@@ -1,0 +1,7 @@
+﻿{
+  "version": 2,
+  "framework": "nextjs",
+  "builds": [{ "src": "next-ssr/package.json", "use": "@vercel/next" }],
+  "buildCommand": "cd next-ssr && npm run build",
+  "outputDirectory": "next-ssr/.next"
+}
